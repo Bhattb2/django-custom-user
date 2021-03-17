@@ -1,4 +1,7 @@
-# ListView, DetailView, DeleteView, CreateView, UpdateView
+from snacks.models import Snack
+from .models import Snack
+
+
 class SnackListView(ListView):
     template_name = 'snacks/snack-list.html'
     model = Snack
